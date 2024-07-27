@@ -1,0 +1,120 @@
+/* Write your CSS here */
+.bg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+}
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #fff;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #171f46;
+}
+.from {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.input-element {
+  width: 250px;
+  height: 30px;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.button {
+  background-color: #8b5cf6;
+  font-family: 'Roboto';
+  width: 50px;
+  height: 27px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image {
+  height: 250px;
+  width: 40%;
+  margin-bottom: 10px;
+}
+.form-container {
+  display: flex;
+}
+
+.line {
+  width: 100%;
+}
+
+.appointments-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-heading {
+  font-size: 17px;
+  font-family: 'Roboto';
+  color: #171f46;
+}
+.starred-button {
+  border: 1px solid #9897f0;
+  height: 25px;
+  width: 70px;
+  font-family: 'Roboto';
+  font-size: 11px;
+  outline: none;
+  background-color: transparent;
+  border-radius: 15px;
+  color: #9897f0;
+  cursor: pointer;
+}
+
+.appointment-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0px;
+}
+.active {
+  background-color: #9897f0;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
